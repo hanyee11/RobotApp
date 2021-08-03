@@ -1,0 +1,43 @@
+ion-content{
+
+    .ion-margin-vertical{
+        font-family: Josefin Sans;
+    }
+
+    .wrap-input{
+        background-color: rgba(221, 217, 217, 0.8);
+        border-radius: 20px;
+        //margin-bottom: 26px;
+        box-shadow: 0 10px 30px 0px rgba(57,71,82,0.12);
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+    .input{
+        display: block;
+        width: 100%;
+        background: transparent;
+        font-family: Josefin Sans;
+        font-size: 18px;
+        line-height: 1.2;
+        border: none;
+        outline: none;
+        height: 46px;
+        padding: 0 20px 0 12px;
+    }
+
+    form{
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 3rem;
+    }
+
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0.3rem;
+    }
+
+}

@@ -1,0 +1,58 @@
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="back-circle"></div>
+    <ion-title class="ion-text-center custom-font" style="font-size: 35px">Delbot</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+
+<div class="container-form-btn">
+    <button class="register-btn custom-font" (click)="operation = 'signup'">Register</button>
+    <button class="login-btn custom-font" (click)="operation = 'signin'">Login</button>
+</div>
+
+<div *ngIf="operation == 'signup'">
+  <form class="ion-padding">
+
+    <div class="wrap-input">
+      <input [(ngModel)]="fullName" class="input" type="text" name="user-name" placeholder="Full Name">
+    </div>
+
+    <div class="wrap-input">
+      <input [(ngModel)]="email" class="input" type="text" name="user-email" placeholder="Email">
+    </div>
+
+    <div class="wrap-input">
+      <input [(ngModel)]="password" class="input" type="password" name="password" placeholder="Password">
+    </div>
+
+    <div class="container-form-btn">
+      <button class="form-btn custom-font" (click)="submit()">Submit</button>
+    </div>
+
+  </form>
+</div>
+
+<div *ngIf="operation == 'signin'">
+  <form class="ion-padding">
+
+    <div class="wrap-input">
+      <input [(ngModel)]="emailInput" class="input" type="text" name="user-email" placeholder="Email">
+    </div>
+
+    <div class="wrap-input">
+      <input [(ngModel)]="passwordInput" class="input" type="password" name="password" placeholder="Password">
+    </div>
+
+    <div class="container-form-btn">
+      <button class="form-btn custom-font" (click)="submit()">Next</button>
+    </div>
+
+  </form>
+</div>
+</ion-content>
+
+

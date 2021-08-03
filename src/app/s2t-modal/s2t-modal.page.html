@@ -1,0 +1,22 @@
+<div style="width: 100%;height:100%;display:flex;justify-content: center;align-items: center;">
+
+  <div style="width: 81vw;height:20vh;background: white;border-radius: 1rem;">
+
+    <div *ngIf="!s2tResult" style="width: 100%;height:100%;display:flex;flex-direction: column;justify-content: center;align-items: center;">
+
+      <ion-spinner></ion-spinner>
+
+      <h5>Listening ...</h5>
+
+    </div>
+
+    <div *ngIf="s2tResult">
+      <p style="text-align: start;padding-left: 15px;padding-right:15px;font-size: 18px;">{{s2tResult}}</p>
+
+      <ion-button style="padding-left: 200px"(click)="dismiss()">Okay</ion-button>
+    </div>
+
+
+  </div>
+
+</div>

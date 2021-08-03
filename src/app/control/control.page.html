@@ -1,0 +1,58 @@
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+<ion-header>
+  <ion-toolbar style="--background:#394752;">
+    <ion-title style="font-weight:bold;color: white;">Control</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button style="color: white;"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-margin-bottom" style="--ion-margin: 30px"></ion-row>  
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="ion-margin-bottom" style="--ion-margin: 50px;padding-top: 10px;">
+      <ion-col class="ion-text-center">
+          <ion-button style="width:135px;font-weight:bold;font-family:Josefin Sans;font-size:22px;color:#394752;--background:rgb(186, 208, 222);" (click)="auto()">Auto</ion-button>
+      </ion-col>
+      <ion-col class="ion-text-center">
+          <ion-button style= "width:135px;font-weight:bold;font-family:Josefin Sans;font-size:22px;color:#394752;--background:rgb(186, 208, 222);" (click)="stopAuto()" >Manual</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="ion-margin-bottom" style="--ion-margin: 15px" >
+      <ion-col class="ion-text-center">
+          <ion-icon name="caret-up" style="font-size:95px;color:#394752;" (click)="forward()" ></ion-icon>
+      </ion-col>
+    </ion-row>  
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="ion-margin-bottom" style="--ion-margin: 15px" >
+      <ion-col class="ion-text-center">
+        <ion-icon name="caret-back" style="font-size:95px;padding-right: 20px;color:#394752;" (click)="left()"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-icon name="stop-circle" style="font-size:80px;color:tomato" (click)="stop()"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-icon name="caret-forward" style="font-size:95px;padding-left: 20px;color:#394752;" (click)="right()"></ion-icon>
+      </ion-col>
+    </ion-row>  
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="ion-margin-bottom" style="--ion-margin: 15px" >
+      <ion-col class="ion-text-center">
+          <ion-icon name="caret-down" style="font-size:95px;color:#394752;" (click)="backward()"></ion-icon>
+      </ion-col>
+    </ion-row>  
+  </ion-grid>
+
+</ion-content>
+

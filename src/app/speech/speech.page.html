@@ -1,0 +1,48 @@
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+<ion-header>
+  <ion-toolbar style="--background:#394752;">
+    <ion-title style="font-weight:bold;color: white;">Speech</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button style="color: white;"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="ion-text-center" style="padding-top: 1cm;">
+      <ion-button class="ion-margin-vertical" style="width:300px;--ion-margin: 15px;--background:rgb(186, 208, 222);color:#394752" (click)="t2s1()">How do you feel today?</ion-button>
+      <ion-button class="ion-margin-vertical" style="width:300px;--ion-margin: 15px;--background:rgb(186, 208, 222);color:#394752" (click)="t2s2()">What can I help you?</ion-button>
+      <ion-button class="ion-margin-vertical" style="width:300px;--ion-margin: 15px;--background:rgb(186, 208, 222);color:#394752" (click)="t2s3()">What can I get for you?</ion-button>
+      <ion-button class="ion-margin-vertical" style="width:300px;--ion-margin: 15px;--background:rgb(186, 208, 222);color:#394752" (click)="t2s4()">Have you finished your meal?</ion-button>
+      <ion-button class="ion-margin-vertical" style="width:300px;--ion-margin: 15px;--background:rgb(186, 208, 222);color:#394752" (click)="t2s5()">Is the food good?</ion-button>
+      <ion-button class="ion-margin-vertical" style="width:300px;--ion-margin: 15px;--background:rgb(186, 208, 222);color:#394752" (click)="t2s6()">Do you want to call Dr?</ion-button>
+    </div>
+
+    <form class="ion-padding">
+      <div style="display: flex; justify-content: space-around; ">
+        <div class="wrap-input">
+          <input [(ngModel)]="customInput" class="input" type="text" name="user-name" placeholder="Custom">
+        </div>
+          <div class="icon">
+            <ion-icon name="send-outline" style="font-size:30px;color: #006bbd; padding-left: 0.5rem;" (click)="custom()"></ion-icon>
+          </div>
+          <div class="icon">
+            <ion-icon name="ear-outline" style="font-size:32px;color:#394752" (click)="s2t()"></ion-icon>
+          </div>
+
+      </div>
+
+          
+    </form>
+
+   
+
+
+    <p>{{s2tResult}}</p>
+</ion-content>
+
+
+  
+  
+

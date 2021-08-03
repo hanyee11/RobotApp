@@ -1,0 +1,46 @@
+ion-content{
+  --background:rgba(255, 255, 255);
+  
+  .border{
+      background-color: rgba(186, 208, 222, 0.5);
+      border-radius: 1rem;
+      margin: 10px 15px 10px 15px;
+      box-shadow: 0 10px 30px 0px rgba(57,71,82,0.12);
+      display: block;
+      width: 100%;
+      font-family: Josefin Sans;
+      font-size: 18px;
+      line-height: 0.2;
+      border: none;
+      outline: none;
+      height: 110px;
+      text-align: center;
+      
+  }
+
+  .icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 0.5cm;
+  }
+
+  .buttonWrapper{
+      padding: 1rem;
+  }
+
+  .buttonGrid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+      row-gap: 1rem;
+      padding-top: 60px;
+      padding-right: 30px;
+    }
+
+  .head{
+      height: 30vh;
+  }
+
+}

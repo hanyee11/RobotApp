@@ -1,0 +1,30 @@
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+<ion-header>
+  <ion-toolbar style="--background:#394752;">
+    <ion-title style="font-weight:bold;color: white;">Video</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button style="color: white;"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img style="width:100%;" *ngIf="viewCamera" [src]="endpoint + ':8001/stream.mjpg'">
+  <ion-grid>
+    <ion-row class="ion-margin-bottom" style="padding-top: 30px;">
+      <ion-col class="ion-text-center">
+        <ion-button style="width:135px;font-weight:bold;font-family:Josefin Sans;font-size:20px;color:#394752;--background:rgb(186, 208, 222)" (click)="camera()">
+          Start
+          <ion-icon style="font-size:30px;padding-bottom:5px" slot="start" name="play"></ion-icon>
+        </ion-button>
+      </ion-col>
+    <ion-col class="ion-text-center">
+      <ion-button style="width:135px;font-weight:bold;font-family:Josefin Sans;font-size:20px;color:#394752;--background:rgb(186, 208, 222)" (click)="stopVideo()">
+        Stop
+        <ion-icon style="font-size:22px;padding-bottom:5px"  slot="start" name="stop"></ion-icon>
+      </ion-button>
+  </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
